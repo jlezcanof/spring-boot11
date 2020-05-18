@@ -1,0 +1,7 @@
+All Activiti tables begin with name: act_*
+
+With Liquibase, let's ONLY handle database items not Activiti engine directly related (bacause Activiti already handles them automatically and would conflict with each other).
+======================================================================
+
+SEQUENCES
+PostgreSQL sequences are based on bigint arithmetic, so the range cannot exceed the range of an eight-byte integer (-9223372036854775808 to 9223372036854775807).

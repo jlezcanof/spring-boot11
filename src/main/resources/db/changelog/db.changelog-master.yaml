@@ -1,0 +1,6 @@
+# This changelog only references changes. Every release has a change file in the changes subdirectory.
+# Note: Do not use Liquibase with Activiti database items (act_*) because of conflicts. Tables databasechangelog* also excluded (internally used by Liquibase)
+databaseChangeLog:
+# ini version 1.0
+  - include:
+      file: db/changelog/changes/db.change-001.yaml

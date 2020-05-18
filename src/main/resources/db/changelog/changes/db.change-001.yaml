@@ -1,0 +1,43 @@
+# changeSet ref > http://www.liquibase.org/documentation/changeset.html
+# column ref    > https://www.liquibase.org/documentation/column.html
+# sql types     > https://stackoverflow.com/questions/16890723/list-all-liquibase-sql-types
+databaseChangeLog:
+
+  - changeSet:
+      id: "001"
+      author: jmlezcanof
+      failOnError: true
+      comment: "Creation of table 'user'"
+      changes:
+        - createTable:
+            tableName: user
+            columns:
+             - column:
+                  name: uuid
+                  type: varchar(36)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_user
+                  remarks: "Request UUID"
+
+             - column:
+                  name: created
+                  type: timestamp
+                  constraints:
+                    nullable: false              
+                  remarks: "Instant the record was created"
+             
+             - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                  remarks: "If authenticated, the id of the user"
+                  
+             - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+                  remarks: "name of the user"

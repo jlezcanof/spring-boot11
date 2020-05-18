@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- http://itdoc.hitachi.co.jp/manuals/3020/30203Y2310e/EY230286.HTM -->
+
+<jaxb:bindings version="2.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://java.sun.com/xml/ns/jaxws">
+	<jaxb:bindings>
+		<jaxb:globalBindings generateElementProperty="false" underscoreBinding="asCharInWord">
+			<!-- <javaType name="java.util.Calendar" xmlType="xsd:dateTime" parseMethod="javax.xml.bind.DatatypeConverter.parseDate" printMethod="javax.xml.bind.DatatypeConverter.printDate" /> -->
+		</jaxb:globalBindings>
+	</jaxb:bindings>
+
+</jaxb:bindings>
+

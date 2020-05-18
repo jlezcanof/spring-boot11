@@ -1,0 +1,21 @@
+<hazelcast xsi:schemaLocation="http://www.hazelcast.com/schema/config hazelcast-config-3.12.xsd"
+		   xmlns="http://www.hazelcast.com/schema/config"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<properties>
+		<!-- Slf4j -->
+		<property name="hazelcast.logging.type">slf4j</property>
+	</properties>
+
+
+
+
+	<network>
+		<join>
+			<tcp-ip enabled="false"/>
+			<multicast enabled="false"/>
+		</join>
+	</network>
+
+</hazelcast>
